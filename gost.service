@@ -1,0 +1,10 @@
+[Unit]
+Description=gost service
+After=network.target syslog.target
+Wants=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/gost -C /etc/gost/config.json
+[Install]
+WantedBy=multi-user.target
