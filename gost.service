@@ -5,6 +5,6 @@ Wants=network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/gost -C /etc/gost/config.json
+ExecStart=/usr/bin/gost -C /etc/gost/gost.yml
 [Install]
 WantedBy=multi-user.target
