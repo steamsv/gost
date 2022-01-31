@@ -1,7 +1,0 @@
-{
-    "Debug": true,
-    "Retries": 0,
-    "ServeNodes": [
-        "tcp://:8443/10.82.2.67:8443"
-    ]
-}
