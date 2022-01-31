@@ -1,0 +1,7 @@
+services:
+- name: service-0
+  addr: ":8443"
+  handler:
+    type: socks
+  listener:
+    type: tcp
