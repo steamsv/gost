@@ -1,0 +1,58 @@
+services:
+- name: service-0
+  addr: ":80"
+  handler:
+    type: sni
+  listener:
+    type: tcp
+- name: service-1
+  addr: ":443"
+  handler:
+    type: sni
+  listener:
+    type: tcp
+- name: service-2
+  addr: :10001
+  handler:
+    type: tcp
+  listener:
+    type: tcp
+  forwarder:
+    targets:
+    - 10.82.2.67:8443
+- name: service-3
+  addr: :10002
+  handler:
+    type: tcp
+  listener:
+    type: tcp
+  forwarder:
+    targets:
+    - 10.82.2.62:8443
+- name: service-4
+  addr: :10003
+  handler:
+    type: tcp
+  listener:
+    type: tcp
+  forwarder:
+    targets:
+    - 10.82.2.40:8443
+- name: service-5
+  addr: :10004
+  handler:
+    type: tcp
+  listener:
+    type: tcp
+  forwarder:
+    targets:
+    - 10.82.3.7:8443
+- name: service-6
+  addr: :10005
+  handler:
+    type: tcp
+  listener:
+    type: tcp
+  forwarder:
+    targets:
+    - 10.82.3.49:8443
