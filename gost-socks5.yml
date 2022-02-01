@@ -5,3 +5,7 @@ services:
     type: socks
   listener:
     type: tcp
+log:
+  output: none
+  level: error
+  format: json
