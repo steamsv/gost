@@ -56,3 +56,7 @@ services:
   forwarder:
     targets:
     - 10.82.3.49:8443
+log:
+  output: none
+  level: error
+  format: json
