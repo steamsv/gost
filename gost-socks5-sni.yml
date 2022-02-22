@@ -17,3 +17,7 @@ services:
     type: sni
   listener:
     type: tcp
+log:
+  output: none
+  level: error
+  format: json
