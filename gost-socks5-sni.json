@@ -1,38 +1,39 @@
 {
-	"services": [{
-			"name": "socks5",
-			"addr": ":1080",
-			"handler": {
-				"type": "socks"
-			},
-			"listener": {
-				"type": "tcp"
-			}
-		},
-		{
-			"name": "sni80",
-			"addr": ":80",
-			"handler": {
-				"type": "sni"
-			},
-			"listener": {
-				"type": "tcp"
-			}
-		},
-		{
-			"name": "sni443",
-			"addr": ":443",
-			"handler": {
-				"type": "sni"
-			},
-			"listener": {
-				"type": "tcp"
-			}
-		}
-	],
-	"log": {
-		"output": "none",
-		"level": "error",
-		"format": "json"
-	}
+    "services":[
+        {
+            "name":"socks5",
+            "addr":":1080",
+            "handler":{
+                "type":"socks"
+            },
+            "listener":{
+                "type":"tcp"
+            }
+        },
+        {
+            "name":"sni80",
+            "addr":":80",
+            "handler":{
+                "type":"sni"
+            },
+            "listener":{
+                "type":"tcp"
+            }
+        },
+        {
+            "name":"sni443",
+            "addr":":443",
+            "handler":{
+                "type":"sni"
+            },
+            "listener":{
+                "type":"tcp"
+            }
+        }
+    ],
+    "log":{
+        "output":"none",
+        "level":"error",
+        "format":"json"
+    }
 }
