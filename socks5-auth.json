@@ -1,0 +1,25 @@
+{
+    "services":[
+        {
+            "name":"socks5",
+            "addr":":10001",
+            "handler":{
+                "type":"socks"
+            },
+            "listener":{
+                "type":"tcp",
+                "auths": [
+                    {
+                      "username": "fviudhuhv",
+                      "password": "vfdivdvid"
+                    }
+                ]
+            }
+        }
+    ],
+    "log":{
+        "output":"none",
+        "level":"error",
+        "format":"json"
+    }
+}
