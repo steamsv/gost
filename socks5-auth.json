@@ -1,25 +1,26 @@
 {
     "services":[
         {
-            "name":"socks5",
-            "addr":":10001",
+            "name":"service-0",
+            "addr":":1080",
             "handler":{
-                "type":"socks"
+                "type":"socks",
+                "auther":"auther-0"
             },
             "listener":{
-                "type":"tcp",
-                "auths": [
-                    {
-                      "username": "fviudhuhv",
-                      "password": "vfdivdvid"
-                    }
-                ]
+                "type":"tcp"
             }
         }
     ],
-    "log":{
-        "output":"none",
-        "level":"error",
-        "format":"json"
-    }
+    "authers":[
+        {
+            "name":"auther-0",
+            "auths":[
+                {
+                    "username":"vgubtr",
+                    "password":"bvigrieirbiuve"
+                }
+            ]
+        }
+    ]
 }
