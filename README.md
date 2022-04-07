@@ -22,6 +22,7 @@ gost -L tcp://:5201/127.0.0.1:5201 -F ws://gost.brook-5.com:8443
 
 <details>
   <summary>测试结果</summary>
+```
 [root@gostclient ~]# iperf3 -c 127.0.0.1 -R
 Connecting to host 127.0.0.1, port 5201
 Reverse mode, remote host 127.0.0.1 is sending
@@ -43,4 +44,5 @@ Reverse mode, remote host 127.0.0.1 is sending
 [  4]   0.00-10.00  sec  3.79 GBytes  3.25 Gbits/sec                  receiver
 
 iperf Done.
+```
 </details>
