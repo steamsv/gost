@@ -19,6 +19,8 @@ gost -L wss://:8443
 gost -L tcp://:5201/127.0.0.1:5201 -F wss://gost.brook-5.com:8443 
 ```
 
+<details><summary>测试结果</summary><blockquote>
+
 ```
 [root@gostclient ~]# iperf3 -c 127.0.0.1 -R
 Connecting to host 127.0.0.1, port 5201
@@ -123,5 +125,8 @@ Reverse mode, remote host 127.0.0.1 is sending
 iperf Done.
 ```
 </blockquote></details>
+
+
+
 
 
