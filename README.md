@@ -6,6 +6,8 @@ wget https://github.com/steamsv/gost/raw/main/install.sh && bash install.sh
 
 ## GOST 各协议带宽性能测试
 
+服务器配置 2C2GB 带宽10Gbps
+
 
 <details><summary>wss</summary><blockquote>
 
