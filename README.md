@@ -113,6 +113,41 @@ iperf Done.
 ```
 </blockquote></details>
 
+<details><summary>relay</summary><blockquote>
+
+服务端
+```
+gost -L relay://:8443
+```
+客户端
+```
+gost -L tcp://:5201/127.0.0.1:5201 -F relay://gost.brook-5.com:8443 
+```
+```
+[root@gostclient ~]# iperf3 -c 127.0.0.1 -R
+Connecting to host 127.0.0.1, port 5201
+Reverse mode, remote host 127.0.0.1 is sending
+[  4] local 127.0.0.1 port 39280 connected to 127.0.0.1 port 5201
+[ ID] Interval           Transfer     Bandwidth
+[  4]   0.00-1.00   sec   674 MBytes  5.66 Gbits/sec                  
+[  4]   1.00-2.00   sec   846 MBytes  7.10 Gbits/sec                  
+[  4]   2.00-3.00   sec   887 MBytes  7.44 Gbits/sec                  
+[  4]   3.00-4.00   sec   908 MBytes  7.61 Gbits/sec                  
+[  4]   4.00-5.00   sec   910 MBytes  7.63 Gbits/sec                  
+[  4]   5.00-6.00   sec   942 MBytes  7.90 Gbits/sec                  
+[  4]   6.00-7.00   sec   930 MBytes  7.80 Gbits/sec                  
+[  4]   7.00-8.00   sec   917 MBytes  7.69 Gbits/sec                  
+[  4]   8.00-9.00   sec   861 MBytes  7.22 Gbits/sec                  
+[  4]   9.00-10.00  sec   922 MBytes  7.73 Gbits/sec                  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Retr
+[  4]   0.00-10.00  sec  8.61 GBytes  7.40 Gbits/sec   20             sender
+[  4]   0.00-10.00  sec  8.61 GBytes  7.39 Gbits/sec                  receiver
+
+iperf Done.
+```
+</blockquote></details>
+
 
 
 
