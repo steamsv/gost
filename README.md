@@ -18,7 +18,6 @@ gost -L wss://:8443
 ```
 gost -L tcp://:5201/127.0.0.1:5201 -F wss://gost.brook-5.com:8443 
 ```
-</blockquote></details>
 
 <details><summary>测试结果</summary><blockquote>
 
@@ -59,7 +58,6 @@ gost -L tls://:8443
 ```
 gost -L tcp://:5201/127.0.0.1:5201 -F tls://gost.brook-5.com:8443 
 ```
-</blockquote></details>
 
 <details><summary>测试结果</summary><blockquote>
 ```
@@ -99,7 +97,6 @@ gost -L http2://:8443
 ```
 gost -L tcp://:5201/127.0.0.1:5201 -F http2://gost.brook-5.com:8443 
 ```
-</blockquote></details>
 
 <details><summary>测试结果</summary><blockquote>
 ```
@@ -125,7 +122,6 @@ Reverse mode, remote host 127.0.0.1 is sending
 
 iperf Done.
 ```
-</blockquote></details>
 </blockquote></details>
 
 
