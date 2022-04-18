@@ -10,7 +10,7 @@ Restart=on-failure
 RestartSec=5s
 DynamicUser=true
 LimitNOFILE=2000000
-ExecStart=/usr/bin/gost -C /etc/gost/gost.yaml
+ExecStart=/usr/bin/gost -C /etc/gost/gost.json
 
 [Install]
 WantedBy=multi-user.target
