@@ -6,11 +6,11 @@ Wants=network-online.target systemd-networkd-wait-online.service
 [Service]
 Type=simple
 User=root
-Restart=on-failure
-RestartSec=5s
+Restart=always
+RestartSec=1
 DynamicUser=true
-LimitNOFILE=2000000
-ExecStart=/usr/bin/gost -C /etc/gost/gost.json
+LimitNOFILE=4000000
+ExecStart=/usr/bin/gost -C /etc/gost/gost.yaml
 
 [Install]
 WantedBy=multi-user.target
