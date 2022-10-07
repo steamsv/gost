@@ -1,7 +1,7 @@
 services:
 - name: service-0
   addr: :10001
-  interface: 155.138.159.130
+  interface: 1.1.1.1
   handler:
     type: socks
     auth:
