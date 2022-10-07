@@ -1,0 +1,19 @@
+services:
+- name: service-0
+  addr: :10001
+  interface: 155.138.159.130
+  handler:
+    type: socks
+    auth:
+      username: gfdgo
+      password: mjhuy
+    metadata:
+      udp: "true"
+  listener:
+    type: tcp
+    metadata:
+      udp: "true"
+log:
+  output: none
+  level: debug
+  format: json
