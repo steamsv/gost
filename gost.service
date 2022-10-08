@@ -10,7 +10,7 @@ Restart=always
 RestartSec=1
 DynamicUser=true
 LimitNOFILE=200000
-ExecStart=/usr/bin/gost -L sni://127.0.0.1:443 -L sni://127.0.0.1:80 -F socks://tw1.dnsunlock.com:10001
+ExecStart=/usr/bin/gost -C /etc/gost/gost.yaml
 
 [Install]
 WantedBy=multi-user.target
