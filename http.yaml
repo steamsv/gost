@@ -1,0 +1,25 @@
+services:
+- name: service-0
+  addr: :10001
+  interface: 1.1.1.1
+  handler:
+    type: http
+    auth:
+      username: sdasg
+      password: fghhs
+  listener:
+    type: tcp
+- name: service-1
+  addr: :10002
+  interface: 1.1.1.1
+  handler:
+    type: http
+    auth:
+      username: sdasg
+      password: fghhs
+  listener:
+    type: tcp
+log:
+  output: none
+  level: debug
+  format: json
