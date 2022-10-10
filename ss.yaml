@@ -1,0 +1,15 @@
+services:
+- name: service-1
+  addr: ":10001"
+  interface: 1.1.1.1
+  handler:
+    type: ss
+    auth:
+      username: aes-256-cfb
+      password: "hfdgs"
+  listener:
+    type: tcp
+log:
+  output: none
+  level: debug
+  format: json
