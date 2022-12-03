@@ -1,18 +1,129 @@
 services:
 - name: service-0
   addr: :10001
-  interface: 1.1.1.1
+  interface: 1.1.1.174
   handler:
     type: socks
-    auth:
-      username: gfdgo
-      password: mjhuy
     metadata:
       udp: "true"
+    auther: auther-0
   listener:
     type: tcp
     metadata:
       udp: "true"
+- name: service-1
+  addr: :10002
+  interface: 1.1.1.176
+  handler:
+    type: socks
+    metadata:
+      udp: "true"
+    auther: auther-0
+  listener:
+    type: tcp
+    metadata:
+      udp: "true"
+- name: service-2
+  addr: :10003
+  interface: 1.1.1.177
+  handler:
+    type: socks
+    metadata:
+      udp: "true"
+    auther: auther-0
+  listener:
+    type: tcp
+    metadata:
+      udp: "true"
+- name: service-3
+  addr: :10004
+  interface: 1.1.1.178
+  handler:
+    type: socks
+    metadata:
+      udp: "true"
+    auther: auther-0
+  listener:
+    type: tcp
+    metadata:
+      udp: "true"
+- name: service-4
+  addr: :10005
+  interface: 1.1.1.179
+  handler:
+    type: socks
+    metadata:
+      udp: "true"
+    auther: auther-0
+  listener:
+    type: tcp
+    metadata:
+      udp: "true"
+- name: service-5
+  addr: :10006
+  interface: 1.1.1.180
+  handler:
+    type: socks
+    metadata:
+      udp: "true"
+    auther: auther-0
+  listener:
+    type: tcp
+    metadata:
+      udp: "true"
+- name: service-6
+  addr: :10007
+  interface: 1.1.1.181
+  handler:
+    type: socks
+    metadata:
+      udp: "true"
+    auther: auther-0
+  listener:
+    type: tcp
+    metadata:
+      udp: "true"
+- name: service-7
+  addr: :10008
+  interface: 1.1.1.182
+  handler:
+    type: socks
+    metadata:
+      udp: "true"
+    auther: auther-0
+  listener:
+    type: tcp
+    metadata:
+      udp: "true"
+- name: service-8
+  addr: :10009
+  interface: 1.1.1.184
+  handler:
+    type: socks
+    metadata:
+      udp: "true"
+    auther: auther-0
+  listener:
+    type: tcp
+    metadata:
+      udp: "true"
+- name: service-9
+  addr: :10010
+  interface: 1.1.1.185
+  handler:
+    type: socks
+    metadata:
+      udp: "true"
+    auther: auther-0
+  listener:
+    type: tcp
+    metadata:
+      udp: "true"
+authers:
+- name: auther-0
+  auths:
+  - username: ghfg
+    password: iuyd
 log:
   output: none
   level: debug
